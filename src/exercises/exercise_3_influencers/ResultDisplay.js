@@ -33,7 +33,7 @@ const StyledTable = styled.table`
 
 const ResultDisplay = ({ data, sortFunction }) => {
     const headers = ["Member", "Type", "Category", "Affiliation", "Title", "State", "Priority"];
-    return data ? (
+    return data?.length > 0 ? (
         <div style={{overflowX: 'scroll'}}>
             <StyledTable>
             <thead>
